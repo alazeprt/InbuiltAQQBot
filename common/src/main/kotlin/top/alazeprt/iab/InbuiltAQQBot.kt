@@ -19,6 +19,7 @@ interface InbuiltAQQBot : ConfigProvider, TaskProvider {
         log(LogLevel.INFO, "Loading config ...")
         loadConfig(this)
         loadBackend()
+        enableStats()
     }
 
     fun loadBackend() {
@@ -37,4 +38,6 @@ interface InbuiltAQQBot : ConfigProvider, TaskProvider {
     }
 
     fun log(level: LogLevel, message: String)
+
+    fun enableStats()
 }

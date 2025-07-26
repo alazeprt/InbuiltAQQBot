@@ -1,6 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    id("java")
     kotlin("jvm") version "1.9.25"
     id("com.gradleup.shadow") version "8.3.0"
 }

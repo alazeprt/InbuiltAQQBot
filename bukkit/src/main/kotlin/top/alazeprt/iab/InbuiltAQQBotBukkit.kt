@@ -4,6 +4,7 @@ import com.google.gson.JsonObject
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 import top.alazeprt.iab.backend.BackendLoader
+import top.alazeprt.iab.bstats.Metrics
 import top.alazeprt.iab.task.Cancelable
 import top.alazeprt.iab.util.BukkitTaskCancelable
 import top.alazeprt.iab.util.LogLevel
@@ -60,5 +61,9 @@ class InbuiltAQQBotBukkit : JavaPlugin(), InbuiltAQQBot {
 
     override fun onDisable() {
         disable()
+    }
+
+    override fun enableStats() {
+        val metrics = Metrics(this, 26662)
     }
 }
