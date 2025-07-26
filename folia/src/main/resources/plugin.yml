@@ -1,0 +1,7 @@
+name: InbuiltAQQBot
+main: top.alazeprt.iab.InbuiltAQQBotBukkit
+version: 1.0-beta.1
+api-version: 1.13
+authors: [ alazeprt ]
+description: A QQ bot backend plugin for Minecraft server
+loadbefore: [ AQQBot ]
